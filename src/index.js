@@ -1,38 +1,24 @@
 // import React from 'react'
 import ReactDOM from "react-dom";
-import paintings from "./paintings.json";
+import App from "./components/App";
 
 // const data = paintings[0]
 
-function Painting(props) {
-  console.log(props);
-  console.log();
-  return (
-    <div>
-      <img src={props.url} alt={props.title} width="480" />
-      <h2>{props.title}</h2>
-      <p>
-        Автор: <a href=""></a>
-      </p>
-      <p>Цена: кредитов</p>
-      <p>Доступность: заканчивается или есть в наличии</p>
-      <button type="button">Добавить в корзину</button>
-    </div>
-  );
-}
+// const painting = paintings[0];
 
-const painting = paintings[0];
+ReactDOM.render(<App />, document.querySelector("#root"));
 
-ReactDOM.render(
-  <Painting
-    url={painting.url}
-    title={painting.title}
-    authorName={painting.author.tag}
-    profileUrl={painting.author.url}
-  />,
-  document.querySelector("#root")
-);
-
+// ReactDOM.render(
+//   <Painting
+//     url={painting.url}
+//     title={painting.title}
+//     author={painting.author.tag}
+//     profileUrl={painting.author.url}
+//     price={painting.price}
+//   />,
+//   document.querySelector('#root')
+// );
+//=============================
 // function Painting() {
 //   return <div>
 //     <img src={data.url} alt={data.title} width="480" />
