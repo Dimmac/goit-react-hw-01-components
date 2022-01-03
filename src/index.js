@@ -6,6 +6,7 @@ import paintings from "./paintings.json";
 
 function Painting(props) {
   console.log(props);
+  console.log();
   return (
     <div>
       <img src={props.url} alt={props.title} width="480" />
