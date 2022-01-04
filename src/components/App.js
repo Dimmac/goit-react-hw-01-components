@@ -1,32 +1,33 @@
-import Painting from "./Painting";
+// import Painting from './Painting';
 import paintings from "../paintings.json";
+import PaintingList from "../components/PaintingList";
+import Section from "./Section";
 
 export default function App() {
+  // const isOnline = false;
   return (
     <div>
-      <Painting
-        url={paintings[0].url}
-        title={paintings[0].title}
-        author={paintings[0].author.tag}
-        profileUrl={paintings[0].author.url}
-        price={paintings[0].price}
-      />
+      <Section title="ТОП недели">
+        <PaintingList items={paintings} />
+      </Section>
+      <Section />
 
-      <Painting
-        url={paintings[1].url}
-        title={paintings[1].title}
-        author={paintings[1].author.tag}
-        profileUrl={paintings[1].author.url}
-        price={paintings[1].price}
-      />
-
-      <Painting
-        url={paintings[2].url}
-        title={paintings[2].title}
-        author={paintings[2].author.tag}
-        profileUrl={paintings[2].author.url}
-        price={paintings[2].price}
-      />
+      {/* {isOnline && 'Онлайн'} */}
+      {/* {isOnline ? 'Онлайн' : 'ОFFFлайн'} */}
+      {/* {[1, 2, 3, 4, 5].map((el) => (
+        <div>{el}</div>
+      ))} */}
+      {/* {paintings.map((painting) => (
+        <Painting
+          key={painting.id}
+          imageUrl={painting.url}
+          title={painting.title}
+          author={painting.author.tag}
+          profileUrl={painting.author.url}
+          price={painting.price}
+          quantity={painting.quantity}
+        />
+      ))} */}
     </div>
   );
 }
