@@ -1,5 +1,14 @@
 // import {BsFillBagPlusFill} from 'react-icons/bs'
-import { Card, UpperCard, UserImage, UserName } from './Profile.styled';
+import {
+  Card,
+  UpperCard,
+  UserImage,
+  UserName,
+  UserTag,
+  UserLocation,
+  StatsList,
+  StatsItem,
+} from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Card>
@@ -7,23 +16,23 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         {/* <BsFillBagPlusFill size={100} color="tomato" /> */}
         <UserImage src={avatar} alt={username} />
         <UserName>{username}</UserName>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <UserTag>@{tag}</UserTag>
+        <UserLocation>{location}</UserLocation>
       </UpperCard>
-      <ul>
-        <li>
+      <StatsList>
+        <StatsItem>
           <span>Followers</span>
           <span>{stats.followers}</span>
-        </li>
-        <li>
+        </StatsItem>
+        <StatsItem>
           <span>Views</span>
           <span>{stats.views}</span>
-        </li>
-        <li>
+        </StatsItem>
+        <StatsItem>
           <span>Likes</span>
           <span>{stats.likes}</span>
-        </li>
-      </ul>
+        </StatsItem>
+      </StatsList>
     </Card>
   );
 };
