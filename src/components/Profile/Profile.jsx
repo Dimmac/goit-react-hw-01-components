@@ -1,4 +1,3 @@
-// import {BsFillBagPlusFill} from 'react-icons/bs'
 import PropTypes from 'prop-types';
 import {
   Card,
@@ -9,12 +8,13 @@ import {
   UserLocation,
   StatsList,
   StatsItem,
+  StatsQuantity,
+  Properties,
 } from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Card>
       <UpperCard>
-        {/* <BsFillBagPlusFill size={100} color="tomato" /> */}
         <UserImage src={avatar} alt={username} />
         <UserName>{username}</UserName>
         <UserTag>@{tag}</UserTag>
@@ -22,16 +22,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       </UpperCard>
       <StatsList>
         <StatsItem>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+          <Properties>Followers</Properties>
+          <StatsQuantity>{stats.followers / 1000}</StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <span>Views</span>
-          <span>{stats.views}</span>
+          <Properties>Views</Properties>
+          <StatsQuantity>{stats.views / 1000}</StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+          <Properties>Likes</Properties>
+          <StatsQuantity>{stats.likes / 1000}</StatsQuantity>
         </StatsItem>
       </StatsList>
     </Card>
