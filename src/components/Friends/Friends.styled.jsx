@@ -3,8 +3,6 @@ export const ListStyles = styled.ul`
   padding: 15px;
   margin: 15px auto;
   max-width: 300px;
-  /* background-color: white; */
-  list-style: none;
 `;
 export const FriendsItem = styled.li`
   display: flex;
