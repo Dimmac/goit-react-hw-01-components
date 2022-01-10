@@ -1,4 +1,5 @@
 // import {BsFillBagPlusFill} from 'react-icons/bs'
+import PropTypes from 'prop-types';
 import {
   Card,
   UpperCard,
@@ -35,4 +36,11 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       </StatsList>
     </Card>
   );
+};
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number),
 };

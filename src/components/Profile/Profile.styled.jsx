@@ -1,18 +1,27 @@
 import styled from '@emotion/styled';
 export const Card = styled.div`
-  display: inline-block;
-  background-color: #ece9e9;
-  border: solid 1px gray;
-  border-radius: 0.3em;
+  // display: inline-block;
+  // background-color: #ece9e9;
+  // border: solid 1px gray;
+  // border-radius: 0.3em;
+  // margin: 15px auto;
+  position: relative;
+  padding: 15px;
+  margin: 15px auto;
+  display: block;
+  background-color: white;
+  height: 400px;
+  max-width: 300px;
 `;
 export const UpperCard = styled.div`
-  background-color: white;
-  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 `;
 export const UserImage = styled.img`
-  width: 100px;
+  max-height: 200px;
   border-radius: 50%;
 `;
 export const UserName = styled.p`
