@@ -16,7 +16,7 @@ export const TableHead = styled.thead`
   left: 0;
   height: 40px;
   width: 100%;
-  background-color: blue;
+  background-color: #00d9ff;
 `;
 export const TableHeadItem = styled.tr`
   display: flex;
@@ -35,10 +35,7 @@ export const TableBodyItem = styled.tr`
   align-items: center;
   border-radius: 3px;
   &:nth-of-type(2n) {
-    background-color: aqua;
-  }
-  &:hover {
-    background-color: yellow;
+    background-color: lightyellow;
   }
 `;
 export const TableBodyText = styled.td`
