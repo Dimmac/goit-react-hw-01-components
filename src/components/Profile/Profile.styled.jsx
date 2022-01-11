@@ -16,7 +16,7 @@ export const UpperCard = styled.div`
   justify-content: center;
 `;
 export const UserImage = styled.img`
-  margin-top: 20px;
+  margin: 30px 0px;
   max-height: 200px;
   border-radius: 50%;
   background-color: lightgrey;
@@ -26,18 +26,21 @@ export const UserName = styled.p`
   font-weight: 700;
   letter-spacing: 0.25px;
   color: #383636;
+  padding-bottom: 15px;
 `;
 export const UserTag = styled.p`
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.25px;
   color: gray;
+  padding: 0px 0px;
 `;
 export const UserLocation = styled.p`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.25px;
   color: lightgray;
+  padding: 15px 0px;
 `;
 export const StatsList = styled.ul`
   margin: 0;

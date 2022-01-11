@@ -7,10 +7,12 @@ import { FriendList } from '../Friends/FriendList';
 import friends from '../Friends/friends.json';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import transactions from '../TransactionHistory/transactions.json';
+import { GlobalCSS } from '../../styles/GlobalStyles';
 
 export function App() {
   return (
     <Container>
+      <GlobalCSS />
       <Profile
         username={user.username}
         tag={user.tag}
